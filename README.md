@@ -6,8 +6,8 @@ Bem-vindo ao repositório do **Cult-iva**, a loja online(e imaginária) que tran
 
 Confira algumas imagens do nosso design no Figma e veja como a magia da botânica decorativa pode transformar qualquer espaço!
 
-(Home) https://i.imgur.com/9JsIJtN.png
-(2 outras páginas) https://i.imgur.com/Lb8VtNo.png
+<img src="https://i.imgur.com/9JsIJtN.png" width=350 heigth=300 /> (Home)
+<img src="https://i.imgur.com/Lb8VtNo.png" width=350 heigth=300 /> (2 outras páginas)
 
 Nosso público-alvo inclui: (Lembrando, a loja não existe)
 - **Amantes da Natureza**: Pessoas que desejam trazer um pedaço da natureza para seus lares.
