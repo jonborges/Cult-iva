@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    
+}
+.container img{
+    width: 220px;
+    height: 250px;
+
+}
+
+.container figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 253px;
+    height: 350px;
+    text-align: start;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgb(212, 212, 212);
+}
+
+.container figure span{
+    font-weight: bold;
+}

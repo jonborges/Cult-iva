@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.container h3{
+    padding-block: 100px;
+    font-size: 36px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 1150px;
+    height: 500px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 1150px;
+    height: 500px;
+}
+
+
+.left h1{
+    font-size: 36px;
+}
+.left span{
+    font-size: 36px;
+    color: #828282;
+}
+
+.left p{
+    font-size: 18px;
+    text-align: start;
+}
+
+
+.right h1{
+    font-size: 36px;
+}
+.right span{
+    font-size: 36px;
+    color: #828282;
+}
+
+.right p{
+    font-size: 18px;
+    text-align: end;
+}
