@@ -1,0 +1,23 @@
+/* Home.module.css */
+.home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.home h2 {
+    padding-block: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 36px;
+}
+
+.home h2 img {
+    margin: 30px;
+    width: 150px;
+    height: 170px;
+}

@@ -1,0 +1,43 @@
+.headernav {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    padding: 0 20px;
+ 
+}
+
+.navList {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.logo {
+    margin-left: 80px; 
+}
+
+.navLinks {
+    display: flex;
+    gap: 50px; 
+    margin-left: 1300px; 
+    border-bottom: dashed 4px #FFDADA;;
+    
+}
+
+.headernav li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #C53838;
+    border-radius: 20px;
+    font-size: 24px;
+}
+
+.headernav img {
+    width: 146px;
+    height: 146px;
+}

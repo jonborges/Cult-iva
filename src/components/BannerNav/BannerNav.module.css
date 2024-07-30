@@ -1,0 +1,16 @@
+.bannernav {
+    background-color: #242323;
+    width: 100%;
+    color: white;
+    align-items: center;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 36px;
+    text-align: center;
+}
+
+.bannernav p{
+    width: 280px;
+    text-wrap: wrap;
+}
