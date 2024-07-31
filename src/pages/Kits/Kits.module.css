@@ -1,75 +1,177 @@
-.kits{
+/* Kits.module.css */
+.kits {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.kits header{
-    width: 1099px;
-    height: 550px;
-    padding-block: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+    padding: 20px;
 }
 
-.kits header h1{
-    font-size: 36px;
+.kits header {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kits header h1 {
+    font-size: 2.25rem;
     font-weight: bold;
 }
 
-.kits header span{
+.kits header span {
     padding-bottom: 5px;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: gray;
     text-decoration: dotted;
-    padding-bottom: 5px;
 }
 
-.kits header p{
-    width: 1100px;
-    text-wrap: wrap;
-    font-size: 18px;
+.kits header p {
+    width: 100%;
+    max-width: 800px;
+    font-size: 1.125rem;
+    text-align: center;
 }
 
-.kits h1{
-    margin-block: 50px;
-    font-size: 36px;
+.kits h1 {
+    margin: 50px 0;
+    font-size: 2.25rem;
+    text-align: center;
 }
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
-.container ul{
-    gap: 142px;
+
+.container ul {
+    gap: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 1072px;
-    height: 1108px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0;
 }
 
-.container li{
+.container li {
     border: solid 2px gray;
     justify-content: space-between;
-    width: 1072px;
-    height: 275px;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.container li img{
-    width: 538px;
+.container li img {
+    width: 100%;
+    max-width: 500px;
     height: auto;
 }
 
-.container h2{
-    justify-content: center;
-    align-items: center;
-    display: flex;
+.container h2 {
     width: 100%;
-    height: 100%;
     background-color: #fef7ff;
-    font-size: 36px;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 1200px) {
+    .kits header {
+        padding: 30px 15px;
+    }
+
+    .kits header h1 {
+        font-size: 2rem;
+    }
+
+    .kits header span {
+        font-size: 1.25rem;
+    }
+
+    .kits header p {
+        font-size: 1rem;
+    }
+
+    .kits h1 {
+        font-size: 2rem;
+    }
+
+    .container h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .kits header {
+        padding: 20px 10px;
+    }
+
+    .kits header h1 {
+        font-size: 1.75rem;
+    }
+
+    .kits header span {
+        font-size: 1.125rem;
+    }
+
+    .kits header p {
+        font-size: 0.875rem;
+    }
+
+    .kits h1 {
+        font-size: 1.75rem;
+    }
+
+    .container ul {
+        gap: 10px;
+    }
+
+    .container li {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .container li img {
+        max-width: 100%;
+    }
+
+    .container h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .kits header {
+        padding: 15px 5px;
+    }
+
+    .kits header h1 {
+        font-size: 1.5rem;
+    }
+
+    .kits header span {
+        font-size: 1rem;
+    }
+
+    .kits header p {
+        font-size: 0.75rem;
+    }
+
+    .kits h1 {
+        font-size: 1.5rem;
+    }
+
+    .container h2 {
+        font-size: 0.875rem;
+    }
 }

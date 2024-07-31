@@ -1,14 +1,32 @@
 .banner {
     display: flex;
     justify-content: center;
-
+    width: 100%;
 }
 
-.banner img{
+.banner img {
     border: solid 6px black;
     border-radius: 20px;
     width: 100%;
-    background-image: url(/cultiva//public/images/banner.png);
+    max-width: 1000px;
+    height: auto;
     margin-bottom: -30px;
-    height: 400px;
+}
+
+@media (max-width: 1200px) {
+    .banner img {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner img {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner img {
+        max-width: 100%;
+    }
 }

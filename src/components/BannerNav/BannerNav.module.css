@@ -2,15 +2,55 @@
     background-color: #242323;
     width: 100%;
     color: white;
-    align-items: center;
-    height: 300px;
+    height: auto;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    font-size: 36px;
+    align-items: center;
+    font-size: 24px;
     text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.bannernav p{
-    width: 280px;
-    text-wrap: wrap;
+.bannernav li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bannernav p {
+    margin: 10px 0;
+}
+
+.bannernav img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .bannernav {
+        flex-direction: column;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .bannernav li {
+        margin-bottom: 20px;
+    }
+
+    .bannernav img {
+        max-width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bannernav {
+        font-size: 14px;
+    }
+
+    .bannernav img {
+        max-width: 60px;
+    }
 }

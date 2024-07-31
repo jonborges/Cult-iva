@@ -21,3 +21,22 @@
     width: 150px;
     height: 170px;
 }
+
+
+@media (max-width: 768px) {
+    .home h2 img{
+        max-width: 50px;
+        max-height: 50px;
+    }
+    .home {
+        display: flex;
+        flex-direction: column;
+    }
+    .home h2{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+}
