@@ -4,29 +4,28 @@
     height: 150px;
     width: 100%;
     padding: 0 20px;
- 
+    box-sizing: border-box;
+    justify-content: space-between; /* Espaço entre a logo e os links */
 }
 
 .navList {
     display: flex;
-    width: 100%;
     list-style: none;
     margin: 0;
     padding: 0;
     align-items: center;
-    justify-content: flex-start;
-    
 }
+
 .logo {
-    margin-left: 80px; 
+    margin-left: 0; /* Remove o espaço fixo à esquerda */
+    flex-shrink: 0;
 }
 
 .navLinks {
     display: flex;
-    gap: 50px; 
-    margin-left: 1300px; 
-    border-bottom: dashed 4px #FFDADA;;
-    
+    gap: 50px;
+    border-bottom: dashed 4px #FFDADA;
+    margin-left: auto;
 }
 
 .headernav li a {
@@ -40,4 +39,86 @@
 .headernav img {
     width: 146px;
     height: 146px;
+}
+
+@media (max-width: 1024px) {
+    .headernav {
+        height: 120px;
+        padding: 0 15px;
+    }
+
+    .navLinks {
+        gap: 30px;
+        margin-left: auto;
+        border-bottom: none;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .headernav li a {
+        font-size: 20px;
+    }
+
+    .headernav img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .headernav {
+        height: 100px;
+        padding: 0 10px;
+        flex-direction: column; /* Muda a direção para coluna em telas menores */
+        align-items: center; /* Centraliza o conteúdo verticalmente */
+    }
+
+    .navList {
+        flex-direction: column; /* Coloca os itens da navegação em coluna */
+        margin-top: 10px; /* Espaço entre a logo e os links */
+    }
+
+    .navLinks {
+        gap: 20px;
+        margin-left: 0; /* Remove a margem à esquerda */
+        border-bottom: none;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .headernav li a {
+        font-size: 18px;
+    }
+
+    .headernav img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .headernav {
+        height: 80px;
+        padding: 0 5px; /* Reduz o padding em telas muito pequenas */
+    }
+
+    .navList {
+        margin-top: 5px; /* Reduz o espaço entre a logo e os links */
+    }
+
+    .navLinks {
+        gap: 10px;
+        margin-left: 0; /* Remove a margem à esquerda */
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .headernav li a {
+        font-size: 16px;
+    }
+
+    .headernav img {
+        width: 80px;
+        height: 80px;
+    }
 }
