@@ -20,3 +20,10 @@
         display: none;
     }
 }
+
+
+@media (min-width: 768px) and (max-width: 830px) {
+    .navitems{
+        display: none;
+    }
+}

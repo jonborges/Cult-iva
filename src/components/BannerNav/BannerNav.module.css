@@ -54,3 +54,10 @@
         max-width: 60px;
     }
 }
+
+
+@media (min-width: 768px) and (max-width: 830px) {
+    .banernav{
+        width: 1024px;
+    }
+}

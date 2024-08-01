@@ -16,59 +16,121 @@
     padding: 10px;
     margin: 10px;
     border: 2px solid rgb(212, 212, 212);
+    box-sizing: border-box;
 }
 
 .container img {
-    width: 220px;
-    height: 250px;
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover; 
 }
 
-.container figure span {
+.container span {
     font-weight: bold;
+    display: block;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+}
+
+.container p {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 @media (max-width: 768px) {
     .container {
-        display: flex;
         flex-direction: column;
         align-items: center;
-        flex-wrap: wrap;
-        width: 400px;
-        height: 240px;
+        width: 100%;
     }
 
-    .container p{
-        font-size: 14px;
-    }
-
-    .container span{
-        font-size: 10px;
-    }
-    
     .container figure {
         max-width: 500px;
-    }
-
-
-}
-
-@media (max-width: 480px) {
-
-    .container {
-        flex-direction: column;
-        gap: 50px;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100px;
-    }
-    .container figure {
-        max-height: 120px;
-        max-width: 120px;
+        height: auto;
     }
 
     .container img {
-        width: 50px;
-        height: 50px;
+        width: 100%;
         height: auto;
     }
+
+    .container span, .container p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .container figure {
+        max-height: 400px;
+        max-width: 100%;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container span, .container p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 830px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 50px; 
+    }
+    .container {
+        flex-direction: row;
+        width: 150px;
+        height: 40px;
+    }
+
+    .container figure {
+        height: 100px;
+        width: 100px;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container span, .container p {
+        font-size: 12px;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .container figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 350px;
+        height: 250px;
+        text-align: start;
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid rgb(212, 212, 212);
+        box-sizing: border-box;
+    }
+
 }

@@ -36,3 +36,13 @@
         height: auto;
     }
 }
+
+
+@media (min-width: 768px) and (max-width: 830px) {
+    .container{
+        padding: 0px;
+        margin: 0px;
+        width: 1024px;
+        height: 60vh;
+    }
+}
