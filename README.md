@@ -2,17 +2,6 @@
 
 Bem-vindo ao repositório do **Cult-iva**, a loja online(e imaginária) que transforma a sua casa e escritório em verdadeiros oásis verdes!🍃🏡
 
-## 📸 Fotos do Projeto
-
-Confira algumas imagens do nosso design no Figma e veja como a magia da botânica decorativa pode transformar qualquer espaço!
-
-(Home)
-<img src="https://i.imgur.com/9JsIJtN.png" width=600 heigth=600 />
-
-
-(2 outras páginas)
-<img src="https://i.imgur.com/Lb8VtNo.png" width=600 heigth=600 />
-
 Nosso público-alvo inclui: (Lembrando, a loja não existe)
 - **Amantes da Natureza**: Pessoas que desejam trazer um pedaço da natureza para seus lares.
 - **Decoradores**: Profissionais e entusiastas da decoração que procuram plantas para complementar seus projetos.
